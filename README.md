@@ -6,12 +6,12 @@ Adds a dark or light in body class
 
 Without props it uses default light and dark
 
-```jsx
+```javascript
 import Layout from '../components/Layout'
 import Blog from '../components/Blog'
 import ThemeSelector from '../components/ThemeSelector'
 
-const Blog = () =>(
+const Blog = () => (
   <>
     <ThemeSelector />
     <Layout>
@@ -25,29 +25,29 @@ const Blog = () =>(
 
 With props
 
-```jsx
+```javascript
 import Layout from '../components/Layout'
 import Blog from '../components/Blog'
 import ThemeSelector from '../components/ThemeSelector'
 
 const themeSelections = {
   themes: [
-  {
-    name: 'light',
-    label: 'Light'
-  },
-  {
-    name: 'dark',
-    label: 'Dark'
-  },
-  {
-    name: 'solarized-dark',
-    label: 'Solarized Dark'
-  }
+    {
+      name: 'light',
+      label: 'Light'
+    },
+    {
+      name: 'dark',
+      label: 'Dark'
+    },
+    {
+      name: 'solarized-dark',
+      label: 'Solarized Dark'
+    }
   ]
 }
 
-const Blog = () =>(
+const Blog = () => (
   <>
     <ThemeSelector themes={themeSelections}/>
     <Layout>
