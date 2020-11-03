@@ -1,0 +1,14 @@
+.toggle-button {
+  position: fixed;
+  right: 1.15rem;
+  z-index: 100;
+  border-color: transparent;
+  box-shadow: none;
+  background-color: transparent;
+  outline: 0;
+  font-size: 1.5rem;
+}
+.toggle-button:hover {
+  cursor: pointer;
+  outline: none !important;
+}
