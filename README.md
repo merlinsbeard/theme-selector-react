@@ -7,9 +7,9 @@ Adds a dark or light in body class
 Without props it uses default light and dark
 
 ```javascript
-import Layout from '../components/Layout'
-import Blog from '../components/Blog'
-import ThemeSelector from '../components/ThemeSelector'
+import Layout from "../components/Layout";
+import Blog from "../components/Blog";
+import ThemeSelector from "../ThemeSelector";
 
 const Blog = () => (
   <>
@@ -18,7 +18,8 @@ const Blog = () => (
       <Blog />
     </Layout>
   </>
-)
+);
+
 ```
 ![](https://media.giphy.com/media/Cz7sXegPQzMUe5V1JR/giphy.gif)
 
@@ -26,35 +27,36 @@ const Blog = () => (
 With props
 
 ```javascript
-import Layout from '../components/Layout'
-import Blog from '../components/Blog'
-import ThemeSelector from '../components/ThemeSelector'
+import Layout from "../components/Layout";
+import Blog from "../components/Blog";
+import ThemeSelector from "../ThemeSelector";
 
 const themeSelections = {
   themes: [
     {
-      name: 'light',
-      label: 'Light'
+      name: "light",
+      label: "Light",
     },
     {
-      name: 'dark',
-      label: 'Dark'
+      name: "dark",
+      label: "Dark",
     },
     {
-      name: 'solarized-dark',
-      label: 'Solarized Dark'
-    }
-  ]
-}
+      name: "solarized-dark",
+      label: "Solarized Dark",
+    },
+  ],
+};
 
 const Blog = () => (
   <>
-    <ThemeSelector themes={themeSelections}/>
+    <ThemeSelector themes={themeSelections} />
     <Layout>
       <Blog />
     </Layout>
   </>
-)
+);
+
 ```
 
 ![](https://media.giphy.com/media/bHljCmwtwTUYZgG6Do/giphy.gif)
